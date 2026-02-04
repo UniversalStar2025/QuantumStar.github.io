@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quantum Star Games — Play, Merge, Defend!</title>
+  <meta name="description" content="Quantum Star Games — fast, fun, and satisfying mobile games. Play our latest titles and follow updates." />
+  <meta property="og:title" content="Quantum Star Games" />
+  <meta property="og:description" content="Fast, fun, and satisfying mobile games." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <style>
+    /* minimal icon sizing in case site CSS doesn't include it */
+    .game-icon{width:96px;height:96px;border-radius:16px;display:none;object-fit:cover;margin:6px 0 4px;}
+    .stores{display:flex;gap:.5rem;flex-wrap:wrap}
+    .store-btn{padding:.5rem .75rem;border-radius:10px;border:1px solid #e0e0e6;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Quantum Star Games logo" /> <span>Quantum Star Games</span></a>
+      <nav>
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button class="mode-toggle" id="modeToggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Make time <span class="grad">fun</span> again.</h1>
+        <p>We craft bite-sized, high‑polish mobile games loved across Asia. Merge, defend, tap — and enjoy the flow.</p>
+        <div class="cta">
+          <a class="btn primary" href="#games">Explore Games</a>
+          <a class="btn ghost" href="mailto:tianuniverse2025@gmail.com">Business Contact</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="orb orb-c"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="games" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Games</h2>
+      <div class="grid">
+
+        <!--
+          HOW TO USE:
+          - Fill data-appstore-id with your iOS numeric ID (e.g., 1234567890). 'id' prefix is optional.
+          - Fill data-gplay-package with your Android package name (e.g., com.jadehigh.Game).
+          - (Optional) For Android icon, you can also add data-android-icon="assets/icons/your_icon.png" to the article.
+          - The links and iOS icon will auto-populate via the helper script at the bottom.
+        -->
+        <article class="card" data-appstore-id="" data-gplay-package="com.quantumstar.IdleBrainrotShooter" data-android-icon="assets/icons/mergehero.png"> 
+          <div class="pill">New</div>
+          <img class="game-icon" alt="Merge Heroes: Number Snake icon" />
+          <h3>Merge Heroes: Number Snake</h3>
+          <p>How far you can survive against the ever-stronger Number Snake!</p>
+          <div class="stores">
+            <a class="store-btn gp" href="#" aria-label="Google Play">Google Play</a>
+            <a class="store-btn ios" href="#" aria-label="App Store">App Store</a>
+          </div>
+        </article>
+
+        <article class="card" data-appstore-id="" data-gplay-package="com.mostar.idlenec" data-android-icon="assets/icons/bonenec.png">
+          <img class="game-icon" alt="Boneforge Necro: Idle RPG icon" />
+          <h3>Boneforge Necro: Idle RPG</h3>
+          <p>Idle necromancer RPG—summon skeletons, craft gear, and crush bosses.</p>
+          <div class="stores">
+            <a class="store-btn gp" href="#" aria-label="Google Play">Google Play</a>
+            <a class="store-btn ios" href="#" aria-label="App Store">App Store</a>
+          </div>
+        </article>
+
+      </div>
+      <div class="note">
+        <small>Tip: download <code>our game</code> / <code>shard to friends</code> on your phone; share links &amp; happy everyday.</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section muted">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <p>Quantum Star Games is an indie studio focused on quick‑to‑play, satisfying mobile experiences. We iterate fast, listen to players, and aim for delightful polish without the fluff.</p>
+      <ul class="features">
+        <li>⚡ Fast gameplay loops</li>
+        <li>🎨 Clean, modern visuals</li>
+        <li>📈 Thoughtful monetization</li>
+        <li>🌍 Global publishing</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-card">
+        <div>
+          <h3>Business</h3>
+          <p><a href="mailto:tianuniverse2025@gmail.com">tianuniverse2025@gmail.com</a></p>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <p><a href="mailto:tianuniverse2025@gmail.com">tianuniverse2025@gmail.com</a></p>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <span>© <span id="year"></span> Quantum Star Games</span>
+      <nav>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Helper: auto-fill links from data-*, and fetch App Store icon -->
+  <script>
+  document.addEventListener('DOMContentLoaded', async () => {
+    const cards = document.querySelectorAll('#games .card');
+    for (const card of cards) {
+      const appIcon = card.querySelector('.game-icon');
+      const appIdRaw = (card.getAttribute('data-appstore-id') || '').trim();
+      const appId = appIdRaw.replace(/^id/i, ''); // allow 'id12345' or '12345'
+      const pkg = (card.getAttribute('data-gplay-package') || '').trim();
+
+      // Build store links
+      const aGp = card.querySelector('a.store-btn.gp');
+      if (aGp) {
+        if (pkg) {
+          aGp.href = 'https://play.google.com/store/apps/details?id=' + encodeURIComponent(pkg);
+          aGp.target = '_blank'; aGp.rel = 'noopener';
+        } else {
+          aGp.removeAttribute('href');
+        }
+      }
+      const aIos = card.querySelector('a.store-btn.ios');
+      if (aIos) {
+        if (appId) {
+          aIos.href = 'https://apps.apple.com/app/id' + encodeURIComponent(appId);
+          aIos.target = '_blank'; aIos.rel = 'noopener';
+        } else {
+          aIos.removeAttribute('href');
+        }
+      }
+
+      // App Store icon (public JSON)
+      if (appIcon && appId) {
+        try {
+          const resp = await fetch('https://itunes.apple.com/lookup?id=' + encodeURIComponent(appId));
+          if (resp.ok) {
+            const data = await resp.json();
+            const app = data.results && data.results[0];
+            if (app && app.artworkUrl512) {
+              appIcon.src = app.artworkUrl512;
+              appIcon.style.display = 'block';
+            }
+          }
+        } catch (e) {
+          console.warn('Lookup failed for App Store id', appId, e);
+        }
+      }
+      // Android icon fallback via local file (optional): data-android-icon
+      if (appIcon && !appIcon.src) {
+        const androidIcon = card.getAttribute('data-android-icon');
+        if (androidIcon) { appIcon.src = androidIcon; appIcon.style.display = 'block'; }
+      }
+    }
+  });
+  </script>
+</body>
+</html>
