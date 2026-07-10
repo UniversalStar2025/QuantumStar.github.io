@@ -17,6 +17,19 @@ menu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () 
   menuButton?.setAttribute('aria-expanded', 'false');
 }));
 
+const heroSlides = [...document.querySelectorAll('.hero-slides img')];
+const heroButtons = [...document.querySelectorAll('[data-hero-slide]')];
+
+heroButtons.forEach((button) => button.addEventListener('click', () => {
+  const selected = Number(button.dataset.heroSlide);
+  heroSlides.forEach((slide, index) => slide.classList.toggle('is-active', index === selected));
+  heroButtons.forEach((control, index) => {
+    const active = index === selected;
+    control.classList.toggle('is-active', active);
+    control.setAttribute('aria-pressed', String(active));
+  });
+}));
+
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -25,7 +38,7 @@ if ('IntersectionObserver' in window) {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.04 });
   document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 } else {
   document.querySelectorAll('.reveal').forEach((element) => element.classList.add('is-visible'));
