@@ -3,25 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07090d">
-  <meta name="description" content="Quantum Star creates bold mobile games built around fast action, satisfying progression, and unforgettable worlds.">
+  <meta name="theme-color" content="#f5f3ed">
+  <meta name="description" content="Quantum Star is an independent mobile game studio creating colorful worlds, satisfying systems, and games made to stay with you.">
   <meta property="og:title" content="Quantum Star Games">
-  <meta property="og:description" content="Clean. Merge. Forge. Discover mobile games from Quantum Star.">
+  <meta property="og:description" content="Small screens. Big worlds. Discover mobile games from Quantum Star.">
   <meta property="og:image" content="https://quantumstar.top/assets/logo.svg">
   <meta property="og:url" content="https://quantumstar.top/">
   <meta property="og:type" content="website">
   <title>Quantum Star | Mobile Game Studio</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
   <script src="assets/art.js?v=1" defer></script>
-  <script src="script.js?v=3" defer></script>
+  <script src="script.js?v=4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" data-header>
     <a class="brand" href="index.html" aria-label="Quantum Star home">
       <img src="assets/logo.svg" alt="" width="42" height="42">
-      <span>QUANTUM <b>STAR</b></span>
+      <span>Quantum Star</span>
     </a>
     <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button>
     <nav class="site-nav" aria-label="Main navigation" data-menu>
@@ -29,126 +29,139 @@
       <a href="#studio">Studio</a>
       <a href="support.html">Support</a>
       <a href="privacy.html">Privacy</a>
+      <a class="nav-store" href="https://play.google.com/store/apps/developer?id=Quantum+Star" target="_blank" rel="noopener">Google Play &#8599;</a>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-media" aria-hidden="true">
-        <img data-art="bubble-feature" alt="">
+      <div class="hero-slides" aria-hidden="true">
+        <img class="is-active" data-art="bubble-feature" alt="">
         <img data-art="merge-feature" alt="">
         <img data-art="bone-feature" alt="">
       </div>
-      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-wash" aria-hidden="true"></div>
       <div class="hero-content reveal">
-        <p class="eyebrow"><span></span> Independent mobile game studio</p>
-        <h1 id="hero-title">QUANTUM<br><strong>STAR</strong></h1>
-        <p class="hero-copy">Distinct worlds. Instantly readable play. We build mobile games with sharp ideas, satisfying progression, and the pull of one more run.</p>
+        <p class="kicker">Independent mobile game studio / 2026</p>
+        <h1 id="hero-title">Quantum Star</h1>
+        <p class="hero-statement">Small screens.<br>Big worlds.</p>
+        <p class="hero-copy">We turn clear ideas into colorful mobile games with satisfying progression and the pull of one more run.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#games">Explore our games <span aria-hidden="true">&#8595;</span></a>
-          <a class="button button-ghost" href="https://play.google.com/store/apps/developer?id=Quantum+Star" target="_blank" rel="noopener">Google Play <span aria-hidden="true">&#8599;</span></a>
+          <a class="button button-primary" href="#games">Explore the worlds <span aria-hidden="true">&#8595;</span></a>
+          <a class="button button-secondary" href="https://play.google.com/store/apps/developer?id=Quantum+Star" target="_blank" rel="noopener">View collection <span aria-hidden="true">&#8599;</span></a>
         </div>
       </div>
-      <div class="hero-proof reveal" aria-label="Quantum Star portfolio highlights">
-        <div><b>3</b><span>Live titles</span></div>
-        <div><b>30K+</b><span>Public installs</span></div>
-        <div><b>1</b><span>Focused studio</span></div>
+      <div class="hero-facts reveal" aria-label="Quantum Star portfolio highlights">
+        <p><strong>03</strong><span>Published games</span></p>
+        <p><strong>30K+</strong><span>Public installs</span></p>
+        <p><strong>Global</strong><span>Mobile audience</span></p>
+      </div>
+      <div class="hero-switcher" role="group" aria-label="Featured game artwork">
+        <button class="is-active" type="button" data-hero-slide="0" aria-pressed="true"><span>01</span> Bubble Sweepers</button>
+        <button type="button" data-hero-slide="1" aria-pressed="false"><span>02</span> Merge Heroes</button>
+        <button type="button" data-hero-slide="2" aria-pressed="false"><span>03</span> Boneforge Necro</button>
       </div>
     </section>
 
-    <section class="ticker" aria-label="Quantum Star play styles"><div>CLEAN <i></i> MERGE <i></i> FORGE <i></i> DEFEND <i></i> EVOLVE <i></i> REPEAT</div></section>
+    <section class="manifesto" aria-label="Quantum Star mission">
+      <p>Playful by instinct.</p>
+      <p>Precise by design.</p>
+      <p>Built for everyone.</p>
+    </section>
 
-    <section class="games section" id="games" aria-labelledby="games-title">
-      <div class="section-heading reveal">
-        <p class="eyebrow"><span></span> Current releases</p>
-        <h2 id="games-title">PICK YOUR NEXT<br><strong>OBSESSION.</strong></h2>
-        <p>Three different worlds, each built around a clear idea and a satisfying core loop.</p>
-      </div>
+    <section class="worlds" id="games" aria-labelledby="games-title">
+      <header class="section-intro reveal">
+        <p class="kicker">01 / Selected worlds</p>
+        <h2 id="games-title">Three distinct ideas.<br>One restless studio.</h2>
+        <p>Each Quantum Star title starts with an interaction anyone can understand, then grows into a system worth mastering.</p>
+      </header>
 
-      <div class="games-grid">
-        <article class="game-card game-card-bubble reveal">
-          <div class="game-media"><img data-art="bubble-feature" alt="Bubble Sweepers cleaning robots battling pollution monsters"><span>Arcade / Roguelite</span></div>
-          <div class="game-body">
-            <p class="game-index">01 / CLEAN THE CHAOS</p>
-            <h3>Bubble Sweepers:<br>Clean Blast</h3>
-            <p>Fire cleansing bubbles, build your upgrades, and turn sci-fi grime into a full-screen clean-up combo.</p>
-            <div class="game-meta"><span>10K+ downloads</span><span>Quick runs</span></div>
-            <a class="button game-button" href="https://play.google.com/store/apps/details?id=com.quantumstar.idleshootvirus" target="_blank" rel="noopener">Play on Google Play <span aria-hidden="true">&#8599;</span></a>
-          </div>
-        </article>
+      <article class="world world-bubble reveal">
+        <div class="world-visual"><img data-art="bubble-feature" alt="Bubble Sweepers cleaning robots battling pollution monsters"><span>01</span></div>
+        <div class="world-copy">
+          <p class="world-type">Arcade roguelite / 10K+ installs</p>
+          <h3>Bubble Sweepers:<br>Clean Blast</h3>
+          <p>Fire cleansing bubbles, build your upgrades, and turn sci-fi grime into a bright, full-screen clean-up combo.</p>
+          <ul class="world-tags" aria-label="Bubble Sweepers features"><li>Quick runs</li><li>Build variety</li><li>Big feedback</li></ul>
+          <a class="arrow-link" href="https://play.google.com/store/apps/details?id=com.quantumstar.idleshootvirus" target="_blank" rel="noopener">Open on Google Play <span aria-hidden="true">&#8599;</span></a>
+        </div>
+      </article>
 
-        <article class="game-card game-card-merge reveal">
-          <div class="game-media"><img data-art="merge-feature" alt="Merge Heroes battling the Number Snake"><span>Merge / Defense</span></div>
-          <div class="game-body">
-            <p class="game-index">02 / BUILD THE BARRAGE</p>
-            <h3>Merge Heroes:<br>Number Snake</h3>
-            <p>Merge heroes, evolve your team, and flood the screen with projectiles before the Number Snake reaches your line.</p>
-            <div class="game-meta"><span>10K+ downloads</span><span>Endless stages</span></div>
-            <a class="button game-button" href="https://play.google.com/store/apps/details?id=com.quantumstar.IdleBrainrotShooter" target="_blank" rel="noopener">Play on Google Play <span aria-hidden="true">&#8599;</span></a>
-          </div>
-        </article>
+      <article class="world world-merge reveal">
+        <div class="world-visual"><img data-art="merge-feature" alt="Merge Heroes battling the Number Snake"><span>02</span></div>
+        <div class="world-copy">
+          <p class="world-type">Merge defense / 10K+ installs</p>
+          <h3>Merge Heroes:<br>Number Snake</h3>
+          <p>Merge heroes, evolve your team, and flood the arena with projectiles before the Number Snake reaches your line.</p>
+          <ul class="world-tags" aria-label="Merge Heroes features"><li>Endless stages</li><li>Hero fusion</li><li>Fast strategy</li></ul>
+          <a class="arrow-link" href="https://play.google.com/store/apps/details?id=com.quantumstar.IdleBrainrotShooter" target="_blank" rel="noopener">Open on Google Play <span aria-hidden="true">&#8599;</span></a>
+        </div>
+      </article>
 
-        <article class="game-card game-card-bone reveal">
-          <div class="game-media"><img data-art="bone-feature" alt="Boneforge Necro commanding an undead army"><span>Idle / Adventure</span></div>
-          <div class="game-body">
-            <p class="game-index">03 / COMMAND THE DEAD</p>
-            <h3>Boneforge Necro:<br>Idle RPG</h3>
-            <p>Summon skeletons and golems, forge powerful gear, and push your undead army through brutal boss waves.</p>
-            <div class="game-meta"><span>10K+ downloads</span><span>Offline progress</span></div>
-            <a class="button game-button" href="https://play.google.com/store/apps/details?id=com.mostar.idlenec" target="_blank" rel="noopener">Play on Google Play <span aria-hidden="true">&#8599;</span></a>
-          </div>
-        </article>
-      </div>
+      <article class="world world-bone reveal">
+        <div class="world-visual"><img data-art="bone-feature" alt="Boneforge Necro commanding an undead army"><span>03</span></div>
+        <div class="world-copy">
+          <p class="world-type">Idle adventure / 10K+ installs</p>
+          <h3>Boneforge Necro:<br>Idle RPG</h3>
+          <p>Summon skeletons and golems, forge powerful gear, and lead an undead army through relentless boss waves.</p>
+          <ul class="world-tags" aria-label="Boneforge Necro features"><li>Offline progress</li><li>Army building</li><li>Boss battles</li></ul>
+          <a class="arrow-link" href="https://play.google.com/store/apps/details?id=com.mostar.idlenec" target="_blank" rel="noopener">Open on Google Play <span aria-hidden="true">&#8599;</span></a>
+        </div>
+      </article>
 
-      <div class="collection-bar reveal">
-        <p><strong>Quantum Star on Google Play.</strong> Find every current release and the latest store updates in one place.</p>
-        <a class="text-link" href="https://play.google.com/store/apps/developer?id=Quantum+Star" target="_blank" rel="noopener">View full collection <span aria-hidden="true">&#8599;</span></a>
+      <div class="collection-callout reveal">
+        <p>Every current Quantum Star release, in one place.</p>
+        <a class="arrow-link" href="https://play.google.com/store/apps/developer?id=Quantum+Star" target="_blank" rel="noopener">See the full Google Play collection <span aria-hidden="true">&#8599;</span></a>
       </div>
     </section>
 
-    <section class="showcase section" aria-labelledby="showcase-title">
-      <div class="section-heading reveal">
-        <p class="eyebrow"><span></span> Inside the worlds</p>
-        <h2 id="showcase-title">PLAY THAT<br><strong>MOVES.</strong></h2>
-        <p>Clean reads, bold feedback, and action that stays legible when the screen gets wild.</p>
-      </div>
-      <div class="showcase-grid reveal">
-        <figure><img data-art="bubble-play-1" alt="Bubble Sweepers gameplay"><figcaption>Clean</figcaption></figure>
-        <figure><img data-art="merge-play-1" alt="Merge Heroes gameplay"><figcaption>Merge</figcaption></figure>
-        <figure><img data-art="bone-play-1" alt="Boneforge Necro gameplay"><figcaption>Forge</figcaption></figure>
-        <figure><img data-art="bubble-play-2" alt="Bubble Sweepers upgrade selection"><figcaption>Upgrade</figcaption></figure>
-        <figure><img data-art="merge-play-2" alt="Merge Heroes defense battle"><figcaption>Defend</figcaption></figure>
-        <figure><img data-art="bone-play-2" alt="Boneforge Necro boss battle"><figcaption>Conquer</figcaption></figure>
+    <section class="motion-lab" aria-labelledby="motion-title">
+      <header class="section-intro reveal">
+        <p class="kicker">02 / In motion</p>
+        <h2 id="motion-title">Made to feel good<br>in your hands.</h2>
+        <p>Clean reads, decisive feedback, and lively worlds that stay legible when the screen gets busy.</p>
+      </header>
+      <div class="filmstrip reveal">
+        <figure><img data-art="bubble-play-1" alt="Bubble Sweepers gameplay"><figcaption><span>01</span> Clean</figcaption></figure>
+        <figure><img data-art="merge-play-1" alt="Merge Heroes gameplay"><figcaption><span>02</span> Merge</figcaption></figure>
+        <figure><img data-art="bone-play-1" alt="Boneforge Necro gameplay"><figcaption><span>03</span> Forge</figcaption></figure>
+        <figure><img data-art="bubble-play-2" alt="Bubble Sweepers upgrade selection"><figcaption><span>04</span> Upgrade</figcaption></figure>
+        <figure><img data-art="merge-play-2" alt="Merge Heroes defense battle"><figcaption><span>05</span> Defend</figcaption></figure>
+        <figure><img data-art="bone-play-2" alt="Boneforge Necro boss battle"><figcaption><span>06</span> Conquer</figcaption></figure>
       </div>
     </section>
 
-    <section class="studio section" id="studio" aria-labelledby="studio-title">
+    <section class="studio" id="studio" aria-labelledby="studio-title">
+      <div class="studio-lead reveal">
+        <p class="kicker">03 / The studio</p>
+        <h2 id="studio-title">We find the fun,<br>then make it sing.</h2>
+      </div>
       <div class="studio-copy reveal">
-        <p class="eyebrow"><span></span> How we build</p>
-        <h2 id="studio-title">PLAY IS THE<br><strong>PRODUCT.</strong></h2>
-        <p>Quantum Star is a mobile game studio focused on ideas players understand in seconds and systems they want to master for weeks. Every release starts with a strong interaction, then earns its depth through progression, feedback, and constant iteration.</p>
+        <p>Quantum Star is an independent mobile game studio focused on instantly readable ideas and systems players want to master for weeks.</p>
+        <p>We prototype quickly, listen closely, and give every release its own visual identity rather than forcing every world into the same mold.</p>
       </div>
-      <div class="studio-lines reveal" aria-label="Studio capabilities">
-        <div><b>01</b><span>Rapid prototyping</span><small>Find the fun early.</small></div>
-        <div><b>02</b><span>Distinct worlds</span><small>Give every game its own identity.</small></div>
-        <div><b>03</b><span>Live iteration</span><small>Learn from real players.</small></div>
-        <div><b>04</b><span>Global release</span><small>Build for a worldwide mobile audience.</small></div>
+      <div class="principles reveal" aria-label="Studio principles">
+        <div><strong>01</strong><h3>Prototype</h3><p>Find the strongest interaction early.</p></div>
+        <div><strong>02</strong><h3>Differentiate</h3><p>Build a world with its own point of view.</p></div>
+        <div><strong>03</strong><h3>Iterate</h3><p>Learn from real players and keep improving.</p></div>
+        <div><strong>04</strong><h3>Publish</h3><p>Reach a worldwide mobile audience.</p></div>
       </div>
     </section>
 
-    <section class="contact-band section" id="contact">
-      <div class="contact-inner reveal">
-        <div><p>PLAYERS / PARTNERS / PRESS</p><h2>LET'S TALK.</h2></div>
-        <div class="contact-actions">
-          <a class="button button-dark" href="mailto:tianuniverse2025@gmail.com">tianuniverse2025@gmail.com <span aria-hidden="true">&#8594;</span></a>
-          <a class="text-link dark-link" href="support.html">Player support <span aria-hidden="true">&#8594;</span></a>
-        </div>
+    <section class="contact-band" id="contact">
+      <div class="contact-copy reveal">
+        <p class="kicker">Players / Partners / Press</p>
+        <h2>Start a conversation.</h2>
+      </div>
+      <div class="contact-actions reveal">
+        <a class="contact-email" href="mailto:tianuniverse2025@gmail.com">tianuniverse2025@gmail.com <span aria-hidden="true">&#8594;</span></a>
+        <a class="arrow-link" href="support.html">Visit player support <span aria-hidden="true">&#8594;</span></a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a class="brand footer-brand" href="index.html"><img src="assets/logo.svg" alt="" width="42" height="42"><span>QUANTUM <b>STAR</b></span></a>
+    <a class="brand footer-brand" href="index.html"><img src="assets/logo.svg" alt="" width="42" height="42"><span>Quantum Star</span></a>
     <nav class="footer-links" aria-label="Footer navigation"><a href="#games">Games</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="app-ads.txt">app-ads.txt</a></nav>
     <p>&copy; <span data-year>2026</span> Quantum Star Games. All rights reserved.</p>
   </footer>
