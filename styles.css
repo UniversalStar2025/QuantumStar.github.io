@@ -131,8 +131,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-footer > p { grid-column: 1 / -1; margin: 0; color: #707b89; font-size: .72rem; }
 
 .legal-page, .support-page { background: #090c11; }
-.legal-hero { min-height: 490px; position: relative; display: flex; align-items: flex-end; padding: calc(var(--header-h) + 76px) 5vw 64px; overflow: hidden; border-bottom: 1px solid var(--line); background-image: url("https://play-lh.googleusercontent.com/xTbtv9lk5RHDf_O8ebY38P77VtqpRlONraK_g5Of78HaW60rzYoBdY2MtnQm5UMI3V_E2LEmcA_w3k9IN9Lg=w1600"); background-position: center; background-size: cover; }
-.support-page .legal-hero { background-image: url("https://play-lh.googleusercontent.com/-KbDChTUSSpx-fEeeSefag4WvngUq7VNPKwYHyP0am59gAcKPGZyTHmqbEkMu-JzPtTr6RifPoNmSt3-Oscgig=w1600"); }
+.legal-hero { min-height: 490px; position: relative; display: flex; align-items: flex-end; padding: calc(var(--header-h) + 76px) 5vw 64px; overflow: hidden; border-bottom: 1px solid var(--line); background-image: var(--merge-feature-art, none); background-position: center; background-size: cover; }
+.support-page .legal-hero { background-image: var(--bubble-feature-art, none); }
 .legal-hero::before { content: ""; position: absolute; inset: 0; background: rgba(5, 7, 10, .76); }
 .legal-hero > div { max-width: 920px; position: relative; z-index: 1; }
 .legal-hero h1 { font-size: 7.4rem; }
