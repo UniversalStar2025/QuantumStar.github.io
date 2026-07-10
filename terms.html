@@ -3,31 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07090d" />
   <title>Terms of Use — Quantum Star Games</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=4" />
+  <script src="script.js?v=3" defer></script>
   <meta name="description" content="Terms of Use (EULA) for Quantum Star Games apps and website." />
 </head>
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html">
-        <img src="assets/logo.svg" alt="" />
-        <span>Quantum Star Games</span>
-      </a>
-      <nav class="links">
-        <a href="privacy.html">Privacy Policy</a>
-      </nav>
-    </div>
+<body class="legal-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="42" height="42"><span>QUANTUM <b>STAR</b></span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Main navigation" data-menu><a href="index.html#games">Games</a><a href="index.html#studio">Studio</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
   </header>
 
-  <section class="section">
-    <div class="container">
-      <h1>Terms of Use</h1>
-      <p>Last updated: <span id="tdate"></span></p>
+  <main id="main">
+    <section class="legal-hero"><div><p class="eyebrow"><span></span> Service rules</p><h1>TERMS<br><strong>OF USE.</strong></h1><p>The rules that apply when you access Quantum Star games, websites, purchases, and related services.</p></div></section>
+    <div class="legal-layout">
+      <aside class="legal-aside"><p>Quick links</p><a href="#eligibility">Eligibility</a><a href="#purchases">Purchases</a><a href="#conduct">Conduct</a><a href="#liability">Liability</a><a href="#contact-terms">Contact</a></aside>
+      <article class="legal-content">
+      <p class="legal-meta"><span>Last updated: 29 September 2025</span></p>
 
       <p>These Terms of Use (the “Terms”, “EULA”) govern your use of the mobile games, websites, and related services provided by Quantum Star Games (“Quantum Star”, “we”, “our”, “us”). By installing, accessing, or using any of our Services, you agree to these Terms. If you do not agree, do not use the Services.</p>
 
-      <h2>1) Eligibility & Accounts</h2>
+      <h2 id="eligibility">1) Eligibility & Accounts</h2>
       <ul>
         <li>You must be at least 13 years old to use the Services. If you are 13–17, your legal guardian must review and agree to these Terms and supervise your use.</li>
         <li>You are responsible for maintaining the confidentiality of your account credentials and for all activity under your account.</li>
@@ -36,14 +36,14 @@
       <h2>2) License</h2>
       <p>Subject to your continued compliance with these Terms, we grant you a personal, revocable, non-exclusive, non-transferable, non-sublicensable license to download, access, and use the Services for your own non-commercial entertainment. We reserve all rights not expressly granted.</p>
 
-      <h2>3) Prohibited Conduct</h2>
+      <h2 id="conduct">3) Prohibited Conduct</h2>
       <ul>
         <li>Do not cheat, exploit bugs, use bots, hacks, or unauthorized third-party software.</li>
         <li>Do not interfere with servers or networks, harass other users, or post illegal, infringing, or offensive content.</li>
         <li>Do not attempt to reverse engineer or extract source code except where such restriction is prohibited by applicable law.</li>
       </ul>
 
-      <h2>4) In-App Purchases & Subscriptions</h2>
+      <h2 id="purchases">4) In-App Purchases & Subscriptions</h2>
       <p>Our games may offer one-time purchases and <strong>auto-renewable subscriptions</strong>. Purchases are processed by the platform provider (e.g., Apple App Store or Google Play). Platform terms, including billing and refunds, apply.</p>
       <ul>
         <li><strong>Title & Length.</strong> Each subscription clearly states its name and duration (e.g., “Monthly Pass — 1 month”).</li>
@@ -72,7 +72,7 @@
       <h2>9) Disclaimers</h2>
       <p>THE SERVICES ARE PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. We do not warrant that the Services will be uninterrupted, secure, or error-free.</p>
 
-      <h2>10) Limitation of Liability</h2>
+      <h2 id="liability">10) Limitation of Liability</h2>
       <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, QUANTUM STAR AND ITS AFFILIATES, OFFICERS, EMPLOYEES, AND PARTNERS SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, USE, OR GOODWILL. OUR TOTAL LIABILITY FOR ANY CLAIM WILL NOT EXCEED THE AMOUNT YOU PAID TO US FOR THE SERVICE IN THE SIX (6) MONTHS PRECEDING THE CLAIM. Nothing in these Terms limits liability that cannot be limited under applicable law.</p>
 
       <h2>11) Indemnity</h2>
@@ -87,16 +87,14 @@
       <h2>14) Changes</h2>
       <p>We may update these Terms to reflect operational, legal, or regulatory changes. We will update the “Last updated” date above and, where required, provide additional notice. Continued use after changes take effect signifies acceptance.</p>
 
-      <h2>15) Contact</h2>
+      <h2 id="contact-terms">15) Contact</h2>
       <p>Questions about these Terms? Email: <a href="mailto:tianuniverse2025@gmail.com">tianuniverse2025@gmail.com</a></p>
 
       <hr />
       <p><small>By using our Services you also acknowledge our <a href="privacy.html">Privacy Policy</a>, which explains what we collect, when we collect it, and why we use it.</small></p>
+      </article>
     </div>
-  </section>
-
-  <script>
-    document.getElementById('tdate').textContent = new Date().toISOString().slice(0,10);
-  </script>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><img src="assets/logo.svg" alt="" width="42" height="42"><span>QUANTUM <b>STAR</b></span></a><nav class="footer-links" aria-label="Footer navigation"><a href="index.html#games">Games</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="app-ads.txt">app-ads.txt</a></nav><p>&copy; <span data-year>2026</span> Quantum Star Games. All rights reserved.</p></footer>
 </body>
 </html>
