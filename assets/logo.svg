@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 128 128" fill="none">
-  <rect x="8" y="8" width="112" height="112" rx="18" fill="#d8ff36" stroke="#18d9ff" stroke-width="4"/>
-  <circle cx="60" cy="60" r="29" stroke="#07090d" stroke-width="14"/>
-  <path d="M77 78L101 102" stroke="#07090d" stroke-width="14" stroke-linecap="square"/>
-  <path d="M96 20L100 29L110 30L102 37L104 47L96 42L87 47L90 37L82 30L92 29L96 20Z" fill="#ff4e6a"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Quantum Star</title>
+  <desc id="desc">A blue Q orbit with a yellow star and coral trail</desc>
+  <rect width="512" height="512" rx="88" fill="#2f57ff"/>
+  <circle cx="230" cy="236" r="126" fill="none" stroke="#f5f3ed" stroke-width="48"/>
+  <path d="M314 326 414 426" fill="none" stroke="#f36b63" stroke-width="54" stroke-linecap="square"/>
+  <path d="m357 70 18 38 42 6-30 30 7 42-37-20-38 20 8-42-31-30 42-6Z" fill="#ffd84d"/>
 </svg>
